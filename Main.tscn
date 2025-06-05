@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwksnduf3w800"]
+
+[ext_resource type="Script" uid="uid://byn86qngtgndp" path="res://scenes/Main.gd" id="1_elqb8"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_elqb8")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TeamNameField" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="NewTeamButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Create New Team"
+
+[node name="SaveTeamButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Save Team"
+
+[node name="GenerateSeasonButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Generate Season"
+
+[node name="TeamSelectA" type="OptionButton" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="TeamSelectB" type="OptionButton" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="LoadTeamButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Load Selected Teams"
+
+[node name="SimGameButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Sim Game"
+
+[node name="SimSeasonButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Sim Season
+"
+
+[node name="Output" type="RichTextLabel" parent="VBoxContainer"]
+custom_minimum_size = Vector2(500, 200)
+layout_mode = 2
+bbcode_enabled = true
